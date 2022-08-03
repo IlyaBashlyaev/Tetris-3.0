@@ -1,0 +1,96 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="{% static 'tetris.png' %}" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+        <link type="text/css" href="{% static 'settings/style.css' %}" rel="stylesheet">
+        <script type="text/javascript" src="{% static 'settings/script.js' %}" defer></script>
+        <title>Tetris - Settings</title>
+    </head>
+
+    <body>
+        <div class="cancel-block">
+            <div class="cancel-block-content">
+                <div class="cancel-block-text">Do you want to leave the settings unchanged?</div>
+
+                <div class="cancel-button-options">
+                    <div class="cancel-button-option">
+                        <div class="cancel-button" onclick='settingsContinue()'>No</div>
+                    </div>
+
+                    <div class="cancel-button-option">
+                        <div class="cancel-button" onclick='settingsExit()'>Yes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="cancel" onclick='cancel()'></div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="container-title">Select the size</div>
+
+                <div class="change-size-options wrapper-options">
+                    <div class="change-size-option">
+                        <div class="change-size-img">
+                            <img src="{% static '9x15.jpg' %}">
+                        </div>
+
+                        <div class="change-size-button">
+                            <div type='submit' class="change-size-button-content" onclick='changeSize(9, 15)'>9 x 15</div>
+                        </div>
+                    </div>
+
+                    <div class="change-size-option">
+                        <div class="change-size-img">
+                            <img src="{% static '12x20.jpg' %}">
+                        </div>
+
+                        <div class="change-size-button">
+                            <div type='submit' class="change-size-button-content" onclick='changeSize(12, 20)'>12 x 20</div>
+                        </div>
+                    </div>
+
+                    <div class="change-size-option">
+                        <div class="change-size-img">
+                            <img src="{% static '15x25.jpg' %}">
+                        </div>
+
+                        <div class="change-size-button">
+                            <div type='submit' class="change-size-button-content" onclick='changeSize(15, 25)'>15 x 25</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="whitespace"></div>
+            <div class="container">
+                <div class="container-title">Enter the size</div>
+
+                <div class="wrapper-options">
+                    <div class="enter-size-input">
+                        <input class='inner-enter-size-input' type='number' placeholder="Enter the width" onclick='wrongClick(0)'>
+                    </div>
+
+                    <div class="enter-size-input">
+                        <input class='inner-enter-size-input' type='number' placeholder="Enter the height" onclick='wrongClick(1)'>
+                    </div>
+
+                    <div class="enter-size-button">
+                        <div class="inner-enter-size-button" onclick='enterSize()'>Ok</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
