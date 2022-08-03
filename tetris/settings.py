@@ -25,7 +25,7 @@ SECRET_KEY = 'dc-pcus2@fhqe)(4kf_r9!a0@p%ghal$6*g)lmk^wnmf29wvj!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'tetris-web.herokuapp.com']
 
 
 # Application definition
