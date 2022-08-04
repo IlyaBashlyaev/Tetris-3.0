@@ -1,1 +1,2 @@
-web: gunicorn tetris-web:app
+release: python manage.py migrate
+web: gunicorn tetris.wsgi
