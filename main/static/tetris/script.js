@@ -54,9 +54,6 @@ const Settings = document.querySelector('.settings')
 const nextFigure = document.querySelector('.next-figure')
 const innerNextFigure = document.querySelector('.inner-next-figure')
 
-const settingsLink = document.createElement('a')
-settingsLink.setAttribute('href', '/settings')
-
 function changeMatrix() {
     canv.height = window.innerHeight * 0.981
     canv.width = canv.height * (arenaWidth / arenaHeight)
@@ -120,7 +117,7 @@ function restart() {
 
 function settings() {
     localStorage.setItem('prevUrl', window.location.href)
-    settingsLink.click()
+    window.location.href = '/settings'
 }
 
 function arenaSweep(rowCount) {
