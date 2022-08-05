@@ -17,7 +17,7 @@ function settingsContinue() {
 }
 
 function settingsExit() {
-    window.location.href = localStorage.getItem('prevUrl')
+    window.location.href = '/'
 }
 
 function changeSize(width, height) {
