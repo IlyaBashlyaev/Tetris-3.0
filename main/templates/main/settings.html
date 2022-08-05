@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="{% static 'tetris.png' %}" type="image/png">
+        <link rel="shortcut icon" href="{% static 'favin.ico' %}" type="image/ico">
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
         <link type="text/css" href="{% static 'settings/style.css' %}" rel="stylesheet">
@@ -79,11 +79,11 @@
 
                 <div class="wrapper-options">
                     <div class="enter-size-input">
-                        <input class='inner-enter-size-input' type='number' placeholder="Enter the width" onclick='wrongClick(0)'>
+                        <input class='inner-enter-size-input' type='number' min="0" placeholder="Enter the width" onclick='wrongClick(0)'>
                     </div>
 
                     <div class="enter-size-input">
-                        <input class='inner-enter-size-input' type='number' placeholder="Enter the height" onclick='wrongClick(1)'>
+                        <input class='inner-enter-size-input' type='number' min="0" placeholder="Enter the height" onclick='wrongClick(1)'>
                     </div>
 
                     <div class="enter-size-button">
