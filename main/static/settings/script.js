@@ -7,19 +7,6 @@ const cancelBlock = document.querySelector('.cancel-block')
 const container = document.querySelectorAll('.container')
 const pages = document.querySelectorAll('.pages')
 const enterSizeInputs = document.querySelectorAll('.inner-enter-size-input')
-const link = document.createElement('a')
-
-function pageClick(index) {
-    if (index != lastIndex) {
-        link.setAttribute('href', '#page' + index)
-        link.click()
-
-        pages[index].classList.add('clicked')
-        pages[lastIndex].classList.remove('clicked')
-        lastIndex = index
-    }
-}
-pageClick(0)
 
 function cancel() {
     cancelBlock.style.display = 'flex'
@@ -30,15 +17,12 @@ function settingsContinue() {
 }
 
 function settingsExit() {
-    tetrisLink = document.createElement('a')
-    tetrisLink.href = localStorage.getItem('prevUrl')
-    tetrisLink.click()
+    window.location.href = localStorage.getItem('prevUrl')
 }
 
 function changeSize(width, height) {
     options = []
-    link.setAttribute('href', `/width${width}/height${height}`)
-    link.click()
+    window.location.href = `/width${width}/height${height}`
 }
 
 function enterSize() {
