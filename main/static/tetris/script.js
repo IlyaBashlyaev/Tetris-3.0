@@ -1,5 +1,3 @@
-localStorage.setItem('prevUrl', window.location.href)
-
 var firstClick = false
 var music = []
 var musicIndex = Math.round(Math.random() * 4)
@@ -115,6 +113,11 @@ function restart() {
 
     pause = false
     update()
+}
+
+function settings() {
+    localStorage.setItem('prevUrl', window.location.href)
+    window.location.href = '/settings'
 }
 
 function arenaSweep(rowCount) {
