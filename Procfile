@@ -1,1 +1,1 @@
-web: gunicorn tetris.wsgi
+web: gunicorn tetris.wsgi:application
