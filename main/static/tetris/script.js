@@ -116,7 +116,6 @@ function restart() {
 }
 
 function settings() {
-    localStorage.setItem('prevUrl', window.location.href)
     window.location.href = '/settings'
 }
 
