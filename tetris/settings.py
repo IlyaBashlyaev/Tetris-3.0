@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'dc-pcus2@fhqe)(4kf_r9!a0@p%ghal$6*g)lmk^wnmf29wvj!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'tetris-web.herokuapp.com']
 
