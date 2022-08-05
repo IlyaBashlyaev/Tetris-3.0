@@ -22,11 +22,11 @@
 
                 <div class="cancel-button-options">
                     <div class="cancel-button-option">
-                        <div class="cancel-button" onclick="settingsContinue()" ontouchend="settingsContinue()">No</div>
+                        <div class="cancel-button" onclick="settingsContinue()" ontouchstart="settingsContinue()">No</div>
                     </div>
 
                     <div class="cancel-button-option">
-                        <div class="cancel-button" onclick="settingsExit()" ontouchend="settingsExit()">Yes</div>
+                        <div class="cancel-button" onclick="settingsExit()" ontouchstart="settingsExit()">Yes</div>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                         </div>
 
                         <div class="change-size-button">
-                            <div type='submit' class="change-size-button-content" onclick="changeSize(9, 15)" ontouchend="changeSize(9, 15)">9 x 15</div>
+                            <div type='submit' class="change-size-button-content" onclick="changeSize(9, 15)" ontouchstart="changeSize(9, 15)">9 x 15</div>
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@
                         </div>
 
                         <div class="change-size-button">
-                            <div type='submit' class="change-size-button-content" onclick="changeSize(12, 20)" ontouchend="changeSize(12, 20)">12 x 20</div>
+                            <div type='submit' class="change-size-button-content" onclick="changeSize(12, 20)" ontouchstart="changeSize(12, 20)">12 x 20</div>
                         </div>
                     </div>
 
@@ -67,7 +67,7 @@
                         </div>
 
                         <div class="change-size-button">
-                            <div type='submit' class="change-size-button-content" onclick="changeSize(15, 25)" ontouchend="changeSize(15, 25)">15 x 25</div>
+                            <div type='submit' class="change-size-button-content" onclick="changeSize(15, 25)" ontouchstart="changeSize(15, 25)">15 x 25</div>
                         </div>
                     </div>
                 </div>
@@ -79,15 +79,15 @@
 
                 <div class="wrapper-options">
                     <div class="enter-size-input">
-                        <input class='inner-enter-size-input' type='number' placeholder="Enter the width" onclick="wrongClick(0)" ontouchend="wrongClick(0)">
+                        <input class='inner-enter-size-input' type='number' placeholder="Enter the width" onclick="wrongClick(0)" ontouchstart="wrongClick(0)">
                     </div>
 
                     <div class="enter-size-input">
-                        <input class='inner-enter-size-input' type='number' placeholder="Enter the height" onclick="wrongClick(1)" ontouchend="wrongClick(1)">
+                        <input class='inner-enter-size-input' type='number' placeholder="Enter the height" onclick="wrongClick(1)" ontouchstart="wrongClick(1)">
                     </div>
 
                     <div class="enter-size-button">
-                        <div class="inner-enter-size-button" onclick="enterSize()" ontouchend="enterSize()">Ok</div>
+                        <div class="inner-enter-size-button" onclick="enterSize()" ontouchstart="enterSize()">Ok</div>
                     </div>
                 </div>
             </div>
